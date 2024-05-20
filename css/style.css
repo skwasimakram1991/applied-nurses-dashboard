@@ -409,6 +409,50 @@ section.inner .heading .wraper2 a.blue-add {
   width: auto;
 }
 
+section.inner2 .wraper ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+section.inner2 .wraper ul li {
+  color: var(--Text, #3D414D);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+section.inner2 .wraper ul li a {
+  color: var(--Text, #3D414D) !important;
+  margin: 0 !important;
+}
+section.inner2 .wraper ul li::after {
+  content: "/";
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  right: -8px;
+  margin: auto;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section.inner2 .wraper ul li:last-child::after {
+  display: none;
+}
+section.inner2 .wraper p {
+  color: var(--Text, #3D414D);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 9px 0 0;
+}
 section.inner2 .wraper2 a.blue {
   display: inline-block;
   width: 136px;
@@ -2976,6 +3020,928 @@ section.login .form-wraper input[type=submit] {
   text-transform: capitalize;
   padding: 14px;
   border: none;
+}
+
+section.timekeeping-time-sheet-sec1 {
+  padding-bottom: 50px;
+}
+section.timekeeping-time-sheet-sec1 .form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 10px 0 30px;
+}
+section.timekeeping-time-sheet-sec1 .form-wrap select {
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  padding: 14px;
+  max-width: 222px;
+  width: 100%;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  outline: none;
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+section.timekeeping-time-sheet-sec1 .form-wrap select.big-one {
+  max-width: 405px;
+}
+section.timekeeping-time-sheet-sec1 .form-wrap input:not([type=submit]) {
+  max-width: 210px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  padding: 14px;
+  outline: none;
+  color: #000;
+}
+section.timekeeping-time-sheet-sec1 .form-wrap input:not([type=submit])::-moz-placeholder {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.timekeeping-time-sheet-sec1 .form-wrap input:not([type=submit])::placeholder {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.timekeeping-time-sheet-sec1 .form-wrap input[type=submit] {
+  max-width: 113px;
+  width: 100%;
+  border: none;
+  padding: 14px;
+}
+section.timekeeping-time-sheet-sec1 .box {
+  padding: 24px 25px 36px;
+  border-radius: 12px;
+  background: #FFF;
+}
+section.timekeeping-time-sheet-sec1 .box .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+section.timekeeping-time-sheet-sec1 .box .top input {
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  width: 341px;
+  padding: 14px 20px;
+  padding-left: 42px;
+  background-image: url(../images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: left 14px center;
+  outline: none;
+  color: #000;
+}
+section.timekeeping-time-sheet-sec1 .box .top input::-moz-placeholder {
+  color: var(--Sub-Text, #808080);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: -0.24px;
+}
+section.timekeeping-time-sheet-sec1 .box .top input::placeholder {
+  color: var(--Sub-Text, #808080);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: -0.24px;
+}
+section.timekeeping-time-sheet-sec1 .box .top .text-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+section.timekeeping-time-sheet-sec1 .box .top .text-wrap p {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px; /* 233.333% */
+  margin: 0;
+}
+section.timekeeping-time-sheet-sec1 .box .top .text-wrap p span {
+  color: var(--Brand, #023B88);
+}
+section.timekeeping-time-sheet-sec1 .box .top .text-wrap .btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+section.timekeeping-time-sheet-sec1 .box .top .text-wrap .btn-wrap a {
+  display: inline-block;
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 12px;
+  border-radius: 6px;
+}
+section.timekeeping-time-sheet-sec1 .box .top .text-wrap .btn-wrap a.red-btn {
+  background: var(--Red, #EA3333);
+}
+section.timekeeping-time-sheet-sec1 .box .top .text-wrap .btn-wrap a.transparent {
+  color: var(--Red, #EA3333);
+  background-color: #fff;
+  border: 1px solid var(--Red, #EA3333);
+  padding: 10px 12px;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap {
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: #FFF;
+  overflow: hidden;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table {
+  width: 100%;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table thead tr th {
+  color: var(--White, #FFF);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: var(--Brand, #023B88);
+  padding: 20px 16px;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table thead tr th.last {
+  width: 277px;
+  text-align: center;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table tbody tr:nth-child(odd) {
+  background: var(--Light-blue-Bg, #F3F6FF);
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table tbody tr th {
+  padding: 38px 16px;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table tbody tr th span {
+  color: #FF1C1C;
+  font-weight: 400;
+  display: inline-block;
+  padding: 6px 10px;
+  padding-left: 24px;
+  border-radius: 4px;
+  background: rgba(255, 28, 28, 0.25);
+  position: relative;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table tbody tr th span::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #FF1C1C;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin: auto;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table tbody tr th.name {
+  color: var(--Brand, #023B88);
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table tbody tr th.last {
+  width: 277px;
+  text-align: center;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table tbody tr th.last a {
+  color: var(--Brand, #023B88);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+section.timekeeping-time-sheet-sec1 .box .table-wrap table tbody tr th.last a img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.time-sheet-summary-sec1 {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+section.time-sheet-summary-sec1 .form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+section.time-sheet-summary-sec1 .form-wrap select {
+  max-width: 353px;
+  width: 100%;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  padding: 12px 14px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+section.time-sheet-summary-sec1 .form-wrap input:not([type=submit]) {
+  max-width: 210px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  outline: none;
+  color: #000;
+}
+section.time-sheet-summary-sec1 .form-wrap input:not([type=submit])::-moz-placeholder {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.time-sheet-summary-sec1 .form-wrap input:not([type=submit])::placeholder {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.time-sheet-summary-sec1 .form-wrap .check-wrap {
+  position: relative;
+  display: table;
+}
+section.time-sheet-summary-sec1 .form-wrap .check-wrap input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+}
+section.time-sheet-summary-sec1 .form-wrap .check-wrap input:checked + label::after {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  background-color: #023B88;
+  border: 2px solid #023B88;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.time-sheet-summary-sec1 .form-wrap .check-wrap label {
+  display: block;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 2px 13px 2px 35px;
+  position: relative;
+}
+section.time-sheet-summary-sec1 .form-wrap .check-wrap label::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ACAFB5;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  margin: auto;
+}
+section.time-sheet-summary-sec1 .form-wrap a.blue-btn {
+  width: 115px;
+  margin: 0;
+}
+section.time-sheet-summary-sec1 .white-box {
+  border-radius: 12px;
+  background: #FFF;
+  padding: 30px 25px 10px;
+}
+section.time-sheet-summary-sec1 h4 {
+  color: var(--Text, #3D414D);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+section.time-sheet-summary-sec1 .table-wrap {
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+section.time-sheet-summary-sec1 .table-wrap table {
+  width: 100%;
+}
+section.time-sheet-summary-sec1 .table-wrap table thead tr {
+  background: var(--Grey-02, #EDF3FA);
+}
+section.time-sheet-summary-sec1 .table-wrap table thead tr th {
+  padding: 30px 16px;
+  border-right: 1px solid var(--Grey-01, #ACAFB5);
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+section.time-sheet-summary-sec1 .table-wrap table thead tr th:last-child {
+  border: none;
+}
+section.time-sheet-summary-sec1 .table-wrap table tbody tr {
+  border-bottom: 1px solid var(--Border, #E5E9F2);
+}
+section.time-sheet-summary-sec1 .table-wrap table tbody tr:last-child {
+  border: none;
+}
+section.time-sheet-summary-sec1 .table-wrap table tbody tr td {
+  padding: 22px 16px;
+  color: var(--Brand, #023B88);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-right: 1px solid var(--Border, #E5E9F2);
+}
+section.time-sheet-summary-sec1 .table-wrap table tbody tr td:first-child {
+  color: var(--Text, #4F4F4F);
+}
+section.time-sheet-summary-sec1 .table-wrap table tbody tr td:last-child {
+  border: none;
+}
+
+section.time-sheet-status-sec1 {
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+section.time-sheet-status-sec1 .form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+section.time-sheet-status-sec1 .form-wrap select {
+  max-width: 405px;
+  width: 100%;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  padding: 12px 14px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+section.time-sheet-status-sec1 .form-wrap select.small-select {
+  max-width: 222px;
+}
+section.time-sheet-status-sec1 .form-wrap input:not([type=submit]) {
+  max-width: 210px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  outline: none;
+  color: #000;
+}
+section.time-sheet-status-sec1 .form-wrap input:not([type=submit])::-moz-placeholder {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.time-sheet-status-sec1 .form-wrap input:not([type=submit])::placeholder {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.time-sheet-status-sec1 .form-wrap input[type=submit] {
+  padding: 12px 28px;
+  border: none;
+}
+section.time-sheet-status-sec1 .white-cover {
+  padding: 30px 25px;
+  border-radius: 12px;
+  background: #FFF;
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap {
+  border-radius: 10px;
+  border: 1px solid #E7ECFF;
+  background: #FFF;
+  overflow: hidden;
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table {
+  width: 100%;
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table thead tr {
+  background: var(--Brand, #023B88);
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table thead tr th {
+  padding: 15px 16px;
+  color: var(--White, #FFF);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table tbody tr {
+  border-top: 1px solid #D9D9D9;
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table tbody tr:nth-child(even) {
+  background: var(--Light-blue-Bg, #F3F6FF);
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table tbody tr td {
+  padding: 22px 16px;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table tbody tr td span {
+  display: inline-block;
+  padding: 6px 10px 6px 24px;
+  border-radius: 4px;
+  background: rgba(8, 142, 21, 0.25);
+  position: relative;
+  color: #088E15;
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table tbody tr td span::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #088E15;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 10px;
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table tbody tr td a {
+  color: var(--Text, #4F4F4F);
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table tbody tr td .flex-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--Brand, #023B88);
+}
+section.time-sheet-status-sec1 .white-cover .table-wrap table tbody tr td .flex-wrap img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.timekeeping-report-sec1 {
+  padding-bottom: 50px;
+}
+section.timekeeping-report-sec1 .from-wraper {
+  border-radius: 12px;
+  background: #FFF;
+  padding: 32px 24px 44px 24px;
+}
+section.timekeeping-report-sec1 .from-wraper label {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 156.25% */
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  display: block;
+}
+section.timekeeping-report-sec1 .from-wraper select {
+  color: var(--Sub-Text, #808080);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+  border-radius: 6px;
+  border: 1px solid var(--Border, #E5E9F2);
+  background: var(--Light-blue-Bg, #F3F6FF);
+  width: 100%;
+  outline: none;
+  padding: 11px 12px;
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  margin-bottom: 24px;
+}
+section.timekeeping-report-sec1 .from-wraper .flex-box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 16px 0 24px;
+}
+section.timekeeping-report-sec1 .from-wraper .flex-box .flex-content {
+  width: 50%;
+}
+section.timekeeping-report-sec1 .from-wraper .flex-box .flex-content input {
+  border-radius: 6px;
+  border: 1px solid var(--Border, #E5E9F2);
+  background: var(--Light-blue-Bg, #F3F6FF);
+  width: 100%;
+  padding: 14px 12px;
+  outline: none;
+}
+section.timekeeping-report-sec1 .from-wraper .flex-box .flex-content input::-moz-placeholder {
+  color: var(--Sub-Text, #808080);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+}
+section.timekeeping-report-sec1 .from-wraper .flex-box .flex-content input::placeholder {
+  color: var(--Sub-Text, #808080);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+}
+section.timekeeping-report-sec1 .from-wraper .checkbox {
+  position: relative;
+  display: table;
+  margin-bottom: 40px;
+}
+section.timekeeping-report-sec1 .from-wraper .checkbox input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+}
+section.timekeeping-report-sec1 .from-wraper .checkbox input:checked + label::before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #fff;
+  position: absolute;
+  left: 5px;
+  z-index: 9;
+  top: 2px;
+  bottom: 0;
+  margin: auto;
+  font-size: 15px;
+}
+section.timekeeping-report-sec1 .from-wraper .checkbox input:checked + label::after {
+  background-color: #023B88;
+  border: 1px solid #023B88;
+}
+section.timekeeping-report-sec1 .from-wraper .checkbox label {
+  padding: 2px 0 2px 35px;
+  position: relative;
+  margin: 0;
+}
+section.timekeeping-report-sec1 .from-wraper .checkbox label::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ACAFB5;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+section.timekeeping-report-sec1 .from-wraper input[type=submit] {
+  border: none;
+  width: 200px;
+}
+
+section.timekeeping-working-sec1 {
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+section.timekeeping-working-sec1 .box-wrap {
+  border-radius: 12px;
+  background: #fff;
+  padding: 40px 26px 34px 26px;
+}
+section.timekeeping-working-sec1 .box-wrap .form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+section.timekeeping-working-sec1 .box-wrap .form-wrap input:not([type=submit]) {
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  padding: 14px 20px;
+  outline: none;
+  color: #000;
+  padding-left: 42px;
+  background-image: url(../images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+section.timekeeping-working-sec1 .box-wrap .form-wrap input:not([type=submit])::-moz-placeholder {
+  color: var(--Sub-Text, #808080);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: -0.24px;
+}
+section.timekeeping-working-sec1 .box-wrap .form-wrap input:not([type=submit])::placeholder {
+  color: var(--Sub-Text, #808080);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: -0.24px;
+}
+section.timekeeping-working-sec1 .box-wrap .form-wrap select {
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid #E9EBFF;
+  background: var(--White, #FFF);
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  padding: 12px 14px;
+  outline: none;
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+section.timekeeping-working-sec1 .box-wrap .form-wrap input[type=submit] {
+  padding: 12px 28px;
+  border: none;
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap {
+  border-radius: 10px;
+  border: 1px solid #E7ECFF;
+  background: #FFF;
+  overflow: hidden;
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table {
+  width: 100%;
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table thead tr {
+  background: var(--Brand, #023B88);
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table thead tr th {
+  padding: 15px 16px;
+  color: var(--White, #FFF);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr {
+  border-top: 1px solid #D9D9D9;
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr:nth-child(even) {
+  background: var(--Light-blue-Bg, #F3F6FF);
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr td {
+  padding: 35px 16px;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr td a {
+  color: var(--Text, #4F4F4F);
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr td span {
+  display: inline-block;
+  width: 153px;
+  color: #088E15;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 6px 10px;
+  padding-left: 24px;
+  position: relative;
+  border-radius: 4px;
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr td span::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin: auto;
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr td span.green {
+  background: rgba(8, 142, 21, 0.25);
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr td span.green::after {
+  background-color: #088E15;
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr td span.red {
+  background: rgba(255, 28, 28, 0.25);
+}
+section.timekeeping-working-sec1 .box-wrap .table-wrap table tbody tr td span.red::after {
+  background-color: #FF1C1C;
+}
+
+section.time-sheet-view-sec1 {
+  padding-top: 40px;
+}
+section.time-sheet-view-sec1 .box-wrap {
+  border-radius: 12px;
+  background: #FFF;
+  padding: 25px;
+  padding-bottom: 200px;
+}
+section.time-sheet-view-sec1 .box-wrap .top-ber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+section.time-sheet-view-sec1 .box-wrap .top-ber ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+section.time-sheet-view-sec1 .box-wrap .top-ber ul li {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px; /* 233.333% */
+}
+section.time-sheet-view-sec1 .box-wrap .top-ber ul li span {
+  color: var(--Brand, #023B88);
+}
+section.time-sheet-view-sec1 .box-wrap .top-ber ul li span.text-green {
+  color: #19AF77;
+}
+section.time-sheet-view-sec1 .box-wrap .top-ber .btn-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+section.time-sheet-view-sec1 .box-wrap .top-ber .btn-wrap a.green-btn {
+  width: 110px;
+}
+section.time-sheet-view-sec1 .box-wrap .top-ber .btn-wrap a.red-btn {
+  display: inline-block;
+  width: 110px;
+  padding: 12px;
+  border-radius: 6px;
+  background: var(--Red, #EA3333);
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap {
+  border-radius: 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table {
+  width: 1300px;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table thead tr {
+  background: var(--Border, #E5E9F2);
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table thead tr th {
+  padding: 14px 109px 14px 16px;
+  border-right: 1px solid #D9D9D9;
+  color: var(--Primary-Color, #023B88);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table thead tr th.th-first {
+  background: var(--Blue-02, #0060E1);
+  padding: 22px 32px;
+  color: var(--White, #FFF);
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr {
+  border-bottom: 1px solid #D9D9D9;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td {
+  padding: 22px 16px;
+  border-right: 1px solid #D9D9D9;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td ul li {
+  width: 85px;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td ul.color-change li {
+  color: var(--Primary-Color, #023B88);
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td ul.jus-center {
+  justify-content: center;
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td.td-first {
+  border: none;
+  background: var(--Light-blue-Bg, #F3F6FF);
+}
+section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td.td-first ul li {
+  width: 115px;
 }
 
 .profile-popup {
