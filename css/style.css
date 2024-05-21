@@ -13,6 +13,12 @@ body {
 body.scrollLock {
   overflow: hidden;
 }
+body.normal-page {
+  background-color: #fff;
+}
+body.normal-page header {
+  padding: 0;
+}
 
 img {
   max-width: 100%;
@@ -39,6 +45,11 @@ a:hover {
 .container-fluid {
   padding-right: 48px;
   padding-left: 48px;
+}
+
+.container {
+  max-width: 1314px;
+  margin: 0 auto;
 }
 
 main {
@@ -3944,6 +3955,629 @@ section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td.td-first ul
   width: 115px;
 }
 
+section.timesheet-report-sec1 .heading {
+  margin: 65px 0 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.timesheet-report-sec1 .heading .profile-wraper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+section.timesheet-report-sec1 .heading .profile-wraper h6 {
+  color: var(--Text, #4F4F4F);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+section.timesheet-report-sec1 .heading .profile-wraper h6 span {
+  display: block;
+  color: var(--Text, #3D414D);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+section.timesheet-report-sec1 .heading .profile-wraper img {
+  width: 82px;
+  height: 82px;
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.timesheet-report-sec1 .profile-document {
+  border: 1px solid var(--Border, #E5E9F2);
+  background: var(--Light-blue-Bg, #F3F6FF);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.timesheet-report-sec1 .profile-document .wraper .profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section.timesheet-report-sec1 .profile-document .wraper .profile-info img {
+  width: 73px;
+  height: 72px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.timesheet-report-sec1 .profile-document .wraper .profile-info h6 {
+  max-width: 233px;
+  color: var(--Brand, #023B88);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+section.timesheet-report-sec1 .profile-document .wraper p {
+  color: var(--Text, #3D414D);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 8px 0 0;
+}
+section.timesheet-report-sec1 .profile-document .wraper p span {
+  color: var(--Brand, #023B88);
+  font-weight: 600;
+  margin-right: 8px;
+}
+section.timesheet-report-sec1 .profile-document ul {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+section.timesheet-report-sec1 .profile-document ul li {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px; /* 150% */
+}
+section.timesheet-report-sec1 .profile-document ul li span {
+  display: block;
+  color: #19AF77;
+}
+section.timesheet-report-sec1 ul.blue-bar {
+  padding: 26px 16px;
+  background: var(--Brand, #023B88);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+section.timesheet-report-sec1 ul.blue-bar li {
+  max-width: 312px;
+  width: 100%;
+  color: var(--White, #FFF);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px; /* 150% */
+}
+section.timesheet-report-sec1 .bg-gray-box {
+  padding: 29px 16px;
+  background: var(--Gray-03, #F4F4F5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.timesheet-report-sec1 .bg-gray-box h5 {
+  color: var(--Black, #000);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px; /* 150% */
+  margin: 0;
+}
+section.timesheet-report-sec1 .bg-gray-box h5 span {
+  display: block;
+  color: #19AF77;
+}
+section.timesheet-report-sec1 .bg-white-box ul {
+  border-bottom: 1px solid var(--Border, #E5E9F2);
+  background: var(--White, #FFF);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+section.timesheet-report-sec1 .bg-white-box ul li {
+  max-width: 312px;
+  width: 100%;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+}
+section.timesheet-report-sec1 .bg-white-box ul li img {
+  width: 107px;
+  height: 66px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.timesheet-report-sec1 .bg-white-box ul li span {
+  color: var(--Blue-02, #0060E1);
+}
+
+section.invoicing-sec1 .white-box {
+  padding: 1.5rem 1.375rem;
+  border-radius: 12px;
+  background: #fff;
+  min-height: 66.1875rem;
+  margin: 0 0 2.5rem;
+}
+section.invoicing-sec1 .white-box .form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+section.invoicing-sec1 .white-box .form-wrap select {
+  max-width: 405px;
+  width: 100%;
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  padding: 12px 14px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #e9ebff;
+  background: var(--White, #fff);
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+section.invoicing-sec1 .white-box .form-wrap select.small-select {
+  max-width: 307px;
+}
+section.invoicing-sec1 .white-box .form-wrap input:not([type=submit]) {
+  max-width: 210px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e9ebff;
+  background: var(--White, #fff);
+  outline: none;
+  color: #000;
+}
+section.invoicing-sec1 .white-box .form-wrap input:not([type=submit])::-moz-placeholder {
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.invoicing-sec1 .white-box .form-wrap input:not([type=submit])::placeholder {
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.invoicing-sec1 .white-box .form-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+section.invoicing-sec1 .white-box .form-btn input {
+  border: none;
+}
+
+section.invoicing2-sec1 .white-box {
+  padding: 1.5rem 1.375rem;
+  border-radius: 12px;
+  background: #fff;
+  min-height: 66.1875rem;
+  margin: 0 0 2.5rem;
+}
+section.invoicing2-sec1 .white-box .form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+section.invoicing2-sec1 .white-box .form-wrap select {
+  max-width: 405px;
+  width: 100%;
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  padding: 12px 14px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #e9ebff;
+  background: var(--White, #fff);
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+section.invoicing2-sec1 .white-box .form-wrap select.small-select {
+  max-width: 307px;
+}
+section.invoicing2-sec1 .white-box .form-wrap input:not([type=submit]) {
+  max-width: 210px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e9ebff;
+  background: var(--White, #fff);
+  outline: none;
+  color: #000;
+}
+section.invoicing2-sec1 .white-box .form-wrap input:not([type=submit])::-moz-placeholder {
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.invoicing2-sec1 .white-box .form-wrap input:not([type=submit])::placeholder {
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.invoicing2-sec1 .white-box .form-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+section.invoicing2-sec1 .white-box .form-btn input {
+  border: none;
+}
+section.invoicing2-sec1 .white-box .invoicing_table {
+  width: 100%;
+  overflow-x: auto;
+}
+section.invoicing2-sec1 .white-box .invoicing_table table {
+  width: 73.375rem;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr:first-child {
+  background: var(--Brand, #023b88);
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr td,
+section.invoicing2-sec1 .white-box .invoicing_table table tr th {
+  padding: 1.5rem 1rem;
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr:nth-child(2n+3) {
+  background: var(--Light-blue-Bg, #f3f6ff);
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr th {
+  color: var(--White, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr .info_tag {
+  position: relative;
+  display: inline-block;
+  gap: 0;
+  padding: 0.375rem 0.625rem 0.375rem 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: #088e15;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 4px;
+  background: rgba(8, 142, 21, 0.25);
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr .info_tag::before {
+  content: " ";
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  background: #088e15;
+  border-radius: 50px;
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr .info_tag.yellow {
+  background: rgba(254, 151, 56, 0.52);
+  color: var(--Orange, #ff7a00);
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr .info_tag.yellow::before {
+  background: #ff7a00;
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr .info_btn {
+  border-radius: 6px;
+  background: var(--Blue-02, #0060e1);
+  display: inline-flex;
+  padding: 12px;
+  align-items: center;
+  gap: 8px;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr .info_btn.greyBg {
+  background: var(--Grey-01, #acafb5);
+}
+section.invoicing2-sec1 .white-box .invoicing_table table tr .info_btn.orangeBg {
+  background: var(--Orange, #ff7a00);
+}
+
+section.invoicing3-sec1 .white-box {
+  padding: 1.5rem 1.375rem;
+  border-radius: 12px;
+  background: #fff;
+  margin: 0 0 2.5rem;
+}
+section.invoicing3-sec1 .white-box .form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+section.invoicing3-sec1 .white-box .form-wrap select {
+  max-width: 493px;
+  width: 100%;
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  padding: 12px 14px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #e9ebff;
+  background: var(--White, #fff);
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+section.invoicing3-sec1 .white-box .form-wrap select.small-select {
+  max-width: 326px;
+}
+section.invoicing3-sec1 .white-box .form-wrap input:not([type=submit]) {
+  max-width: 210px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e9ebff;
+  background: var(--White, #fff);
+  outline: none;
+  color: #000;
+}
+section.invoicing3-sec1 .white-box .form-wrap input:not([type=submit])::-moz-placeholder {
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.invoicing3-sec1 .white-box .form-wrap input:not([type=submit])::placeholder {
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+section.invoicing3-sec1 .white-box .form-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+section.invoicing3-sec1 .white-box .form-btn input {
+  border: none;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 1.875rem;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading ul {
+  display: flex;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading ul li {
+  position: relative;
+  color: var(--Text, #3d414d);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading ul li span {
+  color: var(--Brand, #023b88);
+}
+section.invoicing3-sec1 .white-box .invoicing_heading ul li:first-child {
+  color: var(--Blue-02, #0060e1);
+  margin-left: 0;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading ul li:last-child {
+  margin-right: 0;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading ul li span img.icon_img {
+  width: 1.5rem;
+  vertical-align: text-bottom;
+  margin-right: 0.5rem;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading ul li + li::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 0.0625rem;
+  background: #4f4f4f;
+  left: -1rem;
+  top: 0;
+  opacity: 0.3;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading .submit_on p {
+  color: #19af77;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px; /* 233.333% */
+  margin: 0;
+  padding: 0;
+}
+section.invoicing3-sec1 .white-box .invoicing_heading .submit_on p span {
+  color: var(--Text, #4f4f4f);
+}
+section.invoicing3-sec1 .white-box .invoicing_table {
+  width: 100%;
+  border: 1px solid var(--Border, #e5e9f2);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table {
+  width: 100%;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr.dg-change {
+  background: var(--Light-blue-Bg, #F3F6FF);
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr.dg-change td select {
+  background-color: transparent;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr:first-child {
+  background-color: #f4f4f5;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr th,
+section.invoicing3-sec1 .white-box .invoicing_table table tr td {
+  border-bottom: 1px solid var(--Border, #e5e9f2);
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr th {
+  padding: 1.125rem 1rem;
+  color: var(--Text, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr th + th {
+  border-left: 1px solid var(--Border, #e5e9f2);
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr th:first-child {
+  background: var(--Black, #000);
+  color: #fff;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td {
+  padding: 1.125rem 1rem;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td:first-child {
+  border-left: 1px solid var(--Border, #e5e9f2);
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td + td {
+  border-left: 1px solid var(--Border, #e5e9f2);
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td strong {
+  color: var(--Brand, #023B88);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td strong.txt_blk {
+  color: var(--Black, #000);
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td select {
+  padding: 2px 20px 2px 0;
+  width: 80px;
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  outline: none;
+  background-image: url(../images/aro-down2.svg);
+  background-repeat: no-repeat;
+  background-position: right 3px center;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td .wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td .wraper p {
+  margin: 0;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td .wraper p strong {
+  color: var(--Brand, #023B88);
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+section.invoicing3-sec1 .white-box .invoicing_table table tr td.bg-color {
+  background: var(--Gray-03, #F4F4F5);
+}
+section.invoicing3-sec1 .white-box .inoicing_down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+section.invoicing3-sec1 .white-box .inoicing_down p {
+  color: var(--Black, #000);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin: 0;
+}
+section.invoicing3-sec1 .white-box .inoicing_down a {
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+section.invoicing3-sec1 .white-box .inoicing_down a img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .profile-popup {
   width: 342px;
   border-radius: 8px;
@@ -5793,4 +6427,91 @@ section.time-sheet-view-sec1 .box-wrap .table-wrap table tbody tr td.td-first ul
 }
 .shift-details .right-content .table-wraper table tbody tr td:last-child {
   text-align: center;
+}
+
+.timekeeping-report-location-dropdown {
+  border-radius: 8px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  max-width: 1176px;
+  width: 100%;
+  overflow: hidden;
+}
+.timekeeping-report-location-dropdown ul li {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 156.25% */
+  border-bottom: 1px solid var(--Border, #E5E9F2);
+}
+.timekeeping-report-location-dropdown ul li:last-child {
+  border: none;
+}
+.timekeeping-report-location-dropdown ul li a {
+  display: block;
+  padding: 11px 10px;
+  color: var(--Text, #4F4F4F);
+}
+
+.location {
+  max-width: 405px;
+  width: 1005;
+  border-radius: 8px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  overflow: auto;
+}
+.location ul li {
+  color: var(--Text, #4F4F4F);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 156.25% */
+  border-bottom: 1px solid var(--Border, #E5E9F2);
+}
+.location ul li a {
+  color: var(--Text, #4F4F4F);
+  display: block;
+  padding: 10px;
+}
+
+.frame-popup {
+  max-width: 1224px;
+  width: 100%;
+  min-height: 882px;
+  border-radius: 12px;
+  background: #FFF;
+  padding: 40px 24px 40px 41px;
+  display: flex;
+  align-items: flex-end;
+}
+.frame-popup .wraper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.frame-popup .wraper h5 {
+  color: var(--Black, #000);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin: 0;
+}
+.frame-popup .wraper a {
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+}
+.frame-popup .wraper a img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

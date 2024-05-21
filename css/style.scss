@@ -15,6 +15,12 @@ body {
   &.scrollLock {
     overflow: hidden;
   }
+  &.normal-page{
+    background-color: #fff;
+    header{
+      padding: 0;
+    }
+  }
 }
 
 img {
@@ -42,6 +48,10 @@ a {
 .container-fluid {
   padding-right: 48px;
   padding-left: 48px;
+}
+.container{
+  max-width: 1314px;
+  margin: 0 auto;
 }
 
 main{
@@ -3953,6 +3963,631 @@ section.time-sheet-view-sec1{
 
 }
 
+section.timesheet-report-sec1{
+  .heading{
+    margin: 65px 0 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .profile-wraper{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      h6{
+        color: var(--Text, #4F4F4F);
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        span{
+          display: block;
+          color: var(--Text, #3D414D);
+          font-size: 18px;
+          font-weight: 500;
+          margin-top: 16px;
+        }
+      }
+      img{
+        width: 82px;
+        height: 82px;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+    }
+  }
+  .profile-document{
+    border: 1px solid var(--Border, #E5E9F2);
+    background: var(--Light-blue-Bg, #F3F6FF);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .wraper{
+      .profile-info{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+          width: 73px;
+          height: 72px;
+          object-fit: cover;
+        }
+        h6{
+          max-width: 233px;
+          color: var(--Brand, #023B88);
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin: 0;
+        }
+      }
+      p{
+        color: var(--Text, #3D414D);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 8px 0 0;
+        span{
+          color: var(--Brand, #023B88);
+          font-weight: 600;
+          margin-right: 8px;
+        }
+      }
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      li{
+        color: var(--Text, #4F4F4F);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 27px; /* 150% */ 
+        span{
+          display: block;
+          color: #19AF77;
+        }
+      }
+    }
+  }
+  ul.blue-bar{
+    padding: 26px 16px;
+    background: var(--Brand, #023B88);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    li{
+      max-width: 312px;
+      width: 100%;
+      color: var(--White, #FFF);
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 27px; /* 150% */
+    }
+  }
+  .bg-gray-box{
+    padding: 29px 16px;
+    background: var(--Gray-03, #F4F4F5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h5{
+      color: var(--Black, #000);
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 27px; /* 150% */
+      margin: 0;
+      span{
+        display: block;
+        color: #19AF77;
+      }
+    }
+  }
+  .bg-white-box{
+    ul{
+      border-bottom: 1px solid var(--Border, #E5E9F2);
+      background: var(--White, #FFF);
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      li{
+        max-width: 312px;
+        width: 100%;
+        color: var(--Text, #4F4F4F);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px; /* 150% */
+        img{
+          width: 107px;
+          height: 66px;
+          object-fit: cover;
+        }
+        span{
+          color: var(--Blue-02, #0060E1);
+        }
+      }
+    }
+  }
+}
+
+
+// design by Ali Rizvi
+
+section.invoicing-sec1 {
+  .white-box {
+    padding: 1.5rem 1.375rem;
+    border-radius: 12px;
+    background: #fff;
+    min-height: 66.1875rem;
+    margin: 0 0 2.5rem;
+    .form-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      select {
+        max-width: 405px;
+        width: 100%;
+        color: var(--Text, #4f4f4f);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        padding: 12px 14px;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid #e9ebff;
+        background: var(--White, #fff);
+        background-image: url(../images/aro-down.svg);
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        &.small-select {
+          max-width: 307px;
+        }
+      }
+      input:not([type="submit"]) {
+        max-width: 210px;
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid #e9ebff;
+        background: var(--White, #fff);
+        outline: none;
+        color: #000;
+        &::placeholder {
+          color: var(--Text, #4f4f4f);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+        }
+      }
+    }
+    .form-btn {
+      display: flex;
+      justify-content: flex-end;
+      input {
+        border: none;
+      }
+    }
+  }
+}
+
+section.invoicing2-sec1 {
+  .white-box {
+    padding: 1.5rem 1.375rem;
+    border-radius: 12px;
+    background: #fff;
+    min-height: 66.1875rem;
+    margin: 0 0 2.5rem;
+    .form-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      select {
+        max-width: 405px;
+        width: 100%;
+        color: var(--Text, #4f4f4f);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        padding: 12px 14px;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid #e9ebff;
+        background: var(--White, #fff);
+        background-image: url(../images/aro-down.svg);
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        &.small-select {
+          max-width: 307px;
+        }
+      }
+      input:not([type="submit"]) {
+        max-width: 210px;
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid #e9ebff;
+        background: var(--White, #fff);
+        outline: none;
+        color: #000;
+        &::placeholder {
+          color: var(--Text, #4f4f4f);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+        }
+      }
+    }
+    .form-btn {
+      display: flex;
+      justify-content: flex-end;
+      input {
+        border: none;
+      }
+    }
+    .invoicing_table {
+      width: 100%;
+      overflow-x: auto;
+      table {
+        width: 73.375rem;
+        border-radius: 0.375rem;
+        overflow: hidden;
+        tr {
+          &:first-child {
+            background: var(--Brand, #023b88);
+          }
+          td,
+          th {
+            padding: 1.5rem 1rem;
+          }
+          &:nth-child(2n + 3) {
+            background: var(--Light-blue-Bg, #f3f6ff);
+          }
+          th {
+            color: var(--White, #fff);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+          .info_tag {
+            position: relative;
+            display: inline-block;
+            gap: 0;
+            padding: 0.375rem 0.625rem 0.375rem 1.5rem;
+            align-items: center;
+            justify-content: flex-start;
+            color: #088e15;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 4px;
+            background: rgba(8, 142, 21, 0.25);
+            &::before {
+              content: " ";
+              width: 0.5rem;
+              height: 0.5rem;
+              display: inline-block;
+              position: absolute;
+              left: 10px;
+              top: 12px;
+              background: #088e15;
+              border-radius: 50px;
+            }
+            &.yellow {
+              background: rgba(254, 151, 56, 0.52);
+              color: var(--Orange, #ff7a00);
+              &::before {
+                background: #ff7a00;
+              }
+            }
+          }
+          .info_btn {
+            border-radius: 6px;
+            background: var(--Blue-02, #0060e1);
+            display: inline-flex;
+            padding: 12px;
+            align-items: center;
+            gap: 8px;
+            color: var(--White, #fff);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+            &.greyBg {
+              background: var(--Grey-01, #acafb5);
+            }
+            &.orangeBg {
+              background: var(--Orange, #ff7a00);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.invoicing3-sec1 {
+  .white-box {
+    padding: 1.5rem 1.375rem;
+    border-radius: 12px;
+    background: #fff;
+    margin: 0 0 2.5rem;
+    .form-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      select {
+        max-width: 493px;
+        width: 100%;
+        color: var(--Text, #4f4f4f);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        padding: 12px 14px;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid #e9ebff;
+        background: var(--White, #fff);
+        background-image: url(../images/aro-down.svg);
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        &.small-select {
+          max-width: 326px;
+        }
+      }
+      input:not([type="submit"]) {
+        max-width: 210px;
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid #e9ebff;
+        background: var(--White, #fff);
+        outline: none;
+        color: #000;
+        &::placeholder {
+          color: var(--Text, #4f4f4f);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+        }
+      }
+    }
+    .form-btn {
+      display: flex;
+      justify-content: flex-end;
+      input {
+        border: none;
+      }
+    }
+    .invoicing_heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 1.875rem;
+      ul {
+        display: flex;
+        li {
+          position: relative;
+          color: var(--Text, #3d414d);
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          span {
+            color: var(--Brand, #023b88);
+          }
+          &:first-child {
+            color: var(--Blue-02, #0060e1);
+            margin-left: 0;
+          }
+          margin-right: 16px;
+          margin-left: 16px;
+          &:last-child {
+            margin-right: 0;
+          }
+          span {
+            img {
+              &.icon_img {
+                width: 1.5rem;
+                vertical-align: text-bottom;
+                margin-right: 0.5rem;
+              }
+            }
+          }
+          & + li {
+            &::before {
+              content: " ";
+              position: absolute;
+              height: 100%;
+              width: 0.0625rem;
+              background: #4f4f4f;
+              left: -1rem;
+              top: 0;
+              opacity: 0.3;
+            }
+          }
+        }
+      }
+      .submit_on {
+        p {
+          span {
+            color: var(--Text, #4f4f4f);
+          }
+          color: #19af77;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 42px; /* 233.333% */
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    .invoicing_table {
+      width: 100%;
+      border: 1px solid var(--Border, #e5e9f2);
+      border-radius: 8px;
+      overflow-x: auto;
+      table {
+        width:100%;
+
+        tr {
+          &.dg-change{
+            background: var(--Light-blue-Bg, #F3F6FF);
+            td{
+              select{
+                background-color: transparent;
+              }
+            }
+          }
+          &:first-child {
+            background-color: #f4f4f5;
+          }
+          th,
+          td {
+            border-bottom: 1px solid var(--Border, #e5e9f2);
+          }
+          th {
+            padding: 1.125rem 1rem;
+            color: var(--Text, #4f4f4f);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            & + th {
+              border-left: 1px solid var(--Border, #e5e9f2);
+            }
+            &:first-child {
+              background: var(--Black, #000);
+              color: #fff;
+            }
+          }
+          td {
+            &:first-child {
+              // padding: 1.875rem 1.75rem;
+              border-left: 1px solid var(--Border, #e5e9f2)
+            }
+            & + td {
+              border-left: 1px solid var(--Border, #e5e9f2);
+            }
+            padding: 1.125rem 1rem;
+            strong{
+              color: var(--Brand, #023B88);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              &.txt_blk{
+                color: var(--Black, #000);
+              }
+            }
+            select{
+              padding: 2px 20px 2px 0;
+              width: 80px;
+              color: var(--Text, #4F4F4F);
+              font-family: Montserrat;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              border: none;
+              outline: none;
+              background-image: url(../images/aro-down2.svg);
+              background-repeat: no-repeat;
+              background-position: right 3px center;
+            }
+            .wraper{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              p{
+                margin: 0;
+                strong{
+                  color: var(--Brand, #023B88);
+                  font-family: Montserrat;
+                  font-size: 21px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                }
+              }
+            }
+            &.bg-color{
+              background: var(--Gray-03, #F4F4F5);
+            }
+          }
+        }
+      }
+    }
+    .inoicing_down{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+      p{
+        color: var(--Black, #000);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin: 0;
+      }
+      a{
+        padding: 12px 28px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        img{
+          width: 24px;
+          height: 24px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
 
 
 // main css end
@@ -5868,9 +6503,106 @@ section.time-sheet-view-sec1{
       }
     }
   }
-// shift-scheduling page shift-details popup css start
+// shift-scheduling page shift-details popup css end
 
 
+// time-sheet page timekeeping-report-location-dropdown css start
+  .timekeeping-report-location-dropdown{
+    border-radius: 8px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    max-width: 1176px;
+    width: 100%;
+    overflow: hidden;
+    ul{
+      li{
+        color: var(--Text, #4F4F4F);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px; /* 156.25% */
+        border-bottom: 1px solid var(--Border, #E5E9F2);
+        &:last-child{
+          border: none;
+        }
+        a{
+          display: block;
+          padding: 11px 10px;
+          color: var(--Text, #4F4F4F);
+        }
+      }
+    }
+  }
+// time-sheet page timekeeping-report-location-dropdown css end
+
+
+// invoicing page location-dropdown css start
+  .location{
+    max-width: 405px;
+    width: 1005;
+    border-radius: 8px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    overflow: auto;
+    ul{
+      li{
+        color: var(--Text, #4F4F4F);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px; /* 156.25% */
+        border-bottom: 1px solid var(--Border, #E5E9F2);
+        a{
+          color: var(--Text, #4F4F4F);
+          display: block;
+          padding: 10px;
+        }
+      }
+    }
+  }
+// invoicing page location-dropdown css end
+
+
+// invoicing page frame-popup css start
+.frame-popup{
+  max-width: 1224px;
+  width: 100%;
+  min-height: 882px;
+  border-radius: 12px;
+  background: #FFF;
+  padding: 40px 24px 40px 41px;
+  display: flex;
+  align-items: flex-end;
+  .wraper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h5{
+      color: var(--Black, #000);
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      margin: 0;
+    }
+    a{
+      padding: 12px 28px;
+      display: flex;
+      align-items: center;
+      img{
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+// invoicing page frame-popup css end
 
 
 
