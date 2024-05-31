@@ -149,8 +149,6 @@ input::-webkit-inner-spin-button {
 
 
 
-
-
 // header css start
 header{
   background-color: #fff;
@@ -554,6 +552,10 @@ section.inner2{
         font-size: 16px;
         font-weight: 700;
       }
+    }
+    .blue-btn2{
+      max-width: max-content;
+      width: auto !important;
     }
   }
 }
@@ -5416,9 +5418,258 @@ section.push-notification{
   }
 }
 
+section.add-users-sec1{
+  .white-wrap{
+    padding: 24px 20px 40px;
+    border-radius: 12px;
+    background: #FFF;
+    .heading-wrap{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 13px;
+      h4{
+        color: var(--Brand, #023B88);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+      }
+      a.green-btn{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+      }
+    }
+    label{
+      display: block;
+      color: var(--Text, #4F4F4F);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+    input:not([type="submit"]){
+      width: 100%;
+      padding: 18px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--Border, #E5E9F2);
+      background: var(--Light-blue-Bg, #F3F6FF);
+      margin-bottom: 24px;
+      outline: none;
+      color: #000;
+      &::placeholder{
+        color: var(--Sub-Text, #808080);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    input[type="submit"]{
+     width: 260px;
+     border: none;
+     margin-top: 3px;
+    }
+  }
+}
+
+section.add-users-list-sec1{
+  padding: 0 0 50px;
+  .white-wraper-box{
+    padding: 24px 25px 30px 25px;
+    border-radius: 12px;
+    background: #FFF;
+    .table-wrap{
+      border-radius: 10px;
+      border: 1px solid #E9EBFF;
+      background: #FFF;
+      overflow: hidden;
+      table{
+        width: 100%;
+        thead{
+          tr{
+            background: var(--Brand, #023B88);
+            th{
+              padding: 20px 16px;
+              color: var(--White, #FFF);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              &.cstm-width{
+                width: 277px;
+                text-align: center;
+              }
+            }
+          }
+        }
+        tbody{
+          tr{
+            &:nth-child(odd){
+              background: var(--Light-blue-Bg, #F3F6FF);
+            }
+            td{
+              padding: 30px 16px;
+              color: var(--Text, #4F4F4F);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              span{
+                position: relative;
+                display: inline-block;
+                color: #088E15;
+                font-weight: 400;
+                padding: 6px 21px 6px 35px;
+                border-radius: 4px;
+                background: rgba(8, 142, 21, 0.25);
+                text-align: center;
+                &::after{
+                  content: "";
+                  width: 8px;
+                  height: 8px;
+                  background-color: #088E15;
+                  border-radius: 50%;
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  margin: auto;
+                  left: 20px;
+                }
+              }
+              a{
+                display: inline-block;
+                border-radius: 4px;
+                background: rgba(234, 51, 51, 0.10);
+                width: 133px;
+                padding: 8px;
+                color: var(--Red, #EA3333);
+                font-weight: 500;
+                text-align: center;
+              }
+              &.cstm-width{
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pagination-wraper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 24px;
+      h6{
+        color: var(--Sub-Text, #808080);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+      }
+      ul.pagination{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        li{
+          color: #CCC;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          border-radius: 4px;
+          background: var(--White, #FFF);
+          span{
+            padding: 10px;
+          }
+          a{
+            padding: 10px 15px;
+            border-radius: 4px;
+            border: 1px solid var(--Border, #E5E9F2);
+            background: var(--White, #FFF);
+            &.active{
+              background: var(--Brand, #023B88);
+              color: #fff;
+            }
+          }
+          &:last-child{
+            a{
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.invite-facility-sec1{
+  padding: 10px 0 50px;
+  .white-wrap{
+    padding: 24px 20px 40px;
+    border-radius: 12px;
+    background: #FFF;
+    h3{
+      color: var(--Brand, #023B88);
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0 0 37px;
+    }
+    label{
+      display: block;
+      color: var(--Text, #4F4F4F);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+    input:not([type="submit"]){
+      width: 100%;
+      padding: 18px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--Border, #E5E9F2);
+      background: var(--Light-blue-Bg, #F3F6FF);
+      margin-bottom: 24px;
+      outline: none;
+      color: #000;
+      &::placeholder{
+        color: var(--Sub-Text, #808080);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    input[type="submit"]{
+     width: 260px;
+     border: none;
+     margin-top: 3px;
+    }
+  }
+}
+
 
 // design by Ali Rizvi
-
 section.invoicing-sec1 {
   .white-box {
     padding: 1.5rem 1.375rem;
@@ -5879,8 +6130,6 @@ section.invoicing3-sec1 {
     }
   }
 }
-
-
 // main css end
 
 
@@ -6682,7 +6931,6 @@ section.invoicing3-sec1 {
       }
     }
   }
-
 // provider upcoming page candidates filter dropdown css end
 
 
@@ -6721,7 +6969,6 @@ section.invoicing3-sec1 {
       }
     }
   }
-
 // Othrt Provider Referral List page dropdown-action css end
 
 
@@ -8157,7 +8404,7 @@ section.invoicing3-sec1 {
 // messageing page message-profile-details-popup css end
 
 
-// messageing decline-warning-message-popup css start
+// messageing page decline-warning-message-popup css start
 .decline-warning-message{
   max-width: 343px;
   width: 100%;
@@ -8260,3 +8507,98 @@ section.invoicing3-sec1 {
   }
 }
 // messageing decline-warning-message-popup css end
+
+
+// add users page access-to-popup css start
+  .access-to{
+    max-width: 378px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.06);
+    .head-wrap{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ACAFB5;
+      margin-bottom: 24px;
+      h3{
+        color: var(--Text, #4F4F4F);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+      }
+      img{
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+      }
+    }
+    ul{
+      li{
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:last-child{
+          margin: 0;
+        }
+        h5{
+          color: var(--Black, #000);
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin: 0;
+        }
+        .check-box{
+          position: relative;
+          display: table;
+          padding: 6px 8px;
+          input{
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            z-index: 1;
+            cursor: pointer;
+            &:checked + label{
+              background-color: #00C6B7;
+              &::after{
+                left: unset;
+                right: -8px;
+              }
+            }
+          }
+          label{
+            display: block;
+            width: 32px;
+            height: 12px;
+            border-radius: 16px;
+            background-color: #ACAFB5;
+            position: relative;
+            &::after{
+              content: "";
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: #fff;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: -8px;
+              margin: auto;
+              box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+// add users page access-to-popup css end
