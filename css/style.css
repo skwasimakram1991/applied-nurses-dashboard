@@ -535,6 +535,7 @@ section.inner2 .wraper2 .blue-btn2 {
   max-width: -moz-max-content;
   max-width: max-content;
   width: auto !important;
+  font-weight: 600 !important;
 }
 
 section.home-sec1 {
