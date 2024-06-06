@@ -158,6 +158,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    .hamburger-menu-bar{
+      display: none;
+      i{
+        font-size: 24px;
+        color:  #0060E1;
+      }
+    }
     h4{
       color: var(--Black, #000);
       font-family: Montserrat;
@@ -235,6 +243,7 @@ header{
 footer{
   background: var(--Black, #000);
   position: relative;
+  z-index: 9999;
   &.invoic-page-footer{
     height: 47px;
     width: 100%;
@@ -283,8 +292,20 @@ footer{
   height: 100%;
   // height: calc(100% - 50px);
   background-color: #fff;
+  z-index: 999;
   .logo{
     padding: 14px 0;
+    position: relative;
+    a.left-part-off{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: none;
+      i{
+        font-size: 18px;
+        color: #0060E1;
+      }
+    }
     a{
       display: table;
       margin: auto;
@@ -665,6 +686,10 @@ section.home-sec1{
 }
 
 section.home-sec2{
+  padding: 0 0 24px;
+  .col-lg-12 + .col-lg-6 .graph-box{
+    margin: 0;
+  }
   .graph-box{
     padding: 40px;
     border-radius: 12px;
@@ -723,7 +748,7 @@ section.home-sec2{
     border-radius: 12px;
     background: var(--Blue-02, #0060E1);
     padding: 40px 20px;
-    margin-bottom: 24px;
+    // height: 100%;
     h5{
       color: var(--White, #FFF);
       font-family: Montserrat;
@@ -2954,7 +2979,6 @@ section.login{
   img.main{
     width: 50%;
     height: 100vh;
-    object-fit: cover;
   }
   .form-wraper{
     width: 50%;
@@ -3032,7 +3056,7 @@ section.login{
               position: absolute;
               top: 0px;
               left: 3px;
-              z-index: 9;
+              z-index: 1;
               font-size: 11px;
             }
             &:after{

@@ -151,6 +151,14 @@ header .hed-wraper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+header .hed-wraper .hamburger-menu-bar {
+  display: none;
+}
+header .hed-wraper .hamburger-menu-bar i {
+  font-size: 24px;
+  color: #0060E1;
 }
 header .hed-wraper h4 {
   color: var(--Black, #000);
@@ -225,6 +233,7 @@ header .profile h5 strong {
 footer {
   background: var(--Black, #000);
   position: relative;
+  z-index: 9999;
 }
 footer.invoic-page-footer {
   height: 47px;
@@ -270,9 +279,21 @@ footer h6 {
   width: 287px;
   height: 100%;
   background-color: #fff;
+  z-index: 999;
 }
 .left-part .logo {
   padding: 14px 0;
+  position: relative;
+}
+.left-part .logo a.left-part-off {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: none;
+}
+.left-part .logo a.left-part-off i {
+  font-size: 18px;
+  color: #0060E1;
 }
 .left-part .logo a {
   display: table;
@@ -628,6 +649,12 @@ section.home-sec1 ul.sd li h5 span {
   line-height: 26px;
   margin-bottom: 14px;
 }
+section.home-sec2 {
+  padding: 0 0 24px;
+}
+section.home-sec2 .col-lg-12 + .col-lg-6 .graph-box {
+  margin: 0;
+}
 section.home-sec2 .graph-box {
   padding: 40px;
   border-radius: 12px;
@@ -686,7 +713,6 @@ section.home-sec2 .blue-box {
   border-radius: 12px;
   background: var(--Blue-02, #0060E1);
   padding: 40px 20px;
-  margin-bottom: 24px;
 }
 section.home-sec2 .blue-box h5 {
   color: var(--White, #FFF);
@@ -2926,8 +2952,6 @@ section.login {
 section.login img.main {
   width: 50%;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 section.login .form-wraper {
   width: 50%;
@@ -3016,7 +3040,7 @@ section.login .form-wraper .flex-wrap .checkWrap input[type=checkbox]:checked + 
   position: absolute;
   top: 0px;
   left: 3px;
-  z-index: 9;
+  z-index: 1;
   font-size: 11px;
 }
 section.login .form-wraper .flex-wrap .checkWrap input[type=checkbox]:checked + label:after {
