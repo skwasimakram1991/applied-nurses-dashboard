@@ -57,6 +57,7 @@ a {
 main{
   margin-inline-start: 287px;
   min-height: 100vh;
+  margin-top: 76px;
 }
 
 select {
@@ -154,6 +155,10 @@ header{
   background-color: #fff;
   padding: 10px 0;
   padding-inline-start: 287px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
   .hed-wraper{
     display: flex;
     align-items: center;
@@ -921,6 +926,7 @@ section.providers-sec1{
               &:nth-child(6){
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 gap: 24px;
                 a{
                   img{
@@ -1604,6 +1610,7 @@ section.provider-update-user-sec1{
     }
     .text-wrap{
       text-align: center;
+      padding: 12px;
       img{
         width: 68px;
         height: 59px;
@@ -3068,7 +3075,7 @@ section.login{
         label{
           margin: 0;
           padding-left: 28px;
-          background-color: #fff;
+          // background-color: #fff;
           &::after{
             content: "";
             width: 15px;
@@ -6504,6 +6511,9 @@ section.invoicing3-sec1 {
         border: 1px solid var(--Border, #E5E9F2);
         background: var(--Light-blue-Bg, #F3F6FF);
         padding: 11px;
+        background-image: url(../images/aro-down.svg);
+        background-repeat: no-repeat;
+        background-position: right 12px center;
       }
       input[type="submit"]{
         width: 162px;

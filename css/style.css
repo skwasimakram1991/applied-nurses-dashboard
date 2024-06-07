@@ -55,6 +55,7 @@ a:hover {
 main {
   margin-inline-start: 287px;
   min-height: 100vh;
+  margin-top: 76px;
 }
 
 select {
@@ -146,6 +147,10 @@ header {
   background-color: #fff;
   padding: 10px 0;
   padding-inline-start: 287px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
 }
 header .hed-wraper {
   display: flex;
@@ -886,6 +891,7 @@ section.providers-sec1 .box .table-wrap table tbody tr td:nth-child(3) {
 section.providers-sec1 .box .table-wrap table tbody tr td:nth-child(6) {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 section.providers-sec1 .box .table-wrap table tbody tr td:nth-child(6) a img {
@@ -1593,6 +1599,7 @@ section.provider-update-user-sec1 .form-wrap .file-wrap input[type=file] {
 }
 section.provider-update-user-sec1 .form-wrap .file-wrap .text-wrap {
   text-align: center;
+  padding: 12px;
 }
 section.provider-update-user-sec1 .form-wrap .file-wrap .text-wrap img {
   width: 68px;
@@ -3050,7 +3057,6 @@ section.login .form-wraper .flex-wrap .checkWrap input[type=checkbox]:checked + 
 section.login .form-wraper .flex-wrap .checkWrap label {
   margin: 0;
   padding-left: 28px;
-  background-color: #fff;
 }
 section.login .form-wraper .flex-wrap .checkWrap label::after {
   content: "";
@@ -6515,6 +6521,9 @@ section.invoicing3-sec1 .white-box .inoicing_down a img {
   border: 1px solid var(--Border, #E5E9F2);
   background: var(--Light-blue-Bg, #F3F6FF);
   padding: 11px;
+  background-image: url(../images/aro-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
 }
 .suspend-duration .form-wrap input[type=submit] {
   width: 162px;

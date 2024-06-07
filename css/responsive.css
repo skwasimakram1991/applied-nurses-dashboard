@@ -43,6 +43,15 @@
     section.home-sec2 .blue-box img {
         height: 250px;
     }
+    section.providers-sec1 .box .form-wrap .left-option input[type=search] {
+        width: 275px;
+    }
+    section.providers-sec1 .box .table-wrap table {
+        width: 1200px;
+    }
+    section.providers-sec1 .box .table-wrap {
+        overflow: auto;
+    }
 }
 
 @media screen and (max-width: 1200px) {}
@@ -79,6 +88,38 @@
     .left-part .logo a.left-part-off i {
         font-size: 26px;
     }
+
+    section.login img.main {
+        width: 100%;
+        object-fit: cover;
+    }
+    section.login {
+       position: relative;
+    }
+    section.login .form-wraper {
+        width: 85%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 120px 100px 130px;
+        border-radius: 30px;
+        background: #ffffffe3;
+    }
+    section.login .form-wraper form {
+        width: 100%;
+    }
+    section.login .form-wraper .flex-wrap .checkWrap label {
+        background-color: transparent;
+    }
+    section.login .form-wraper input:not([type=submit]) {
+        border: 1px solid #ffffff;
+        background: #ffffff;
+    }
+    .candidate-onboarding {
+        max-width: 90%;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -96,9 +137,99 @@
     section.home-sec2 .blue-box {
         margin-top: 25px;
     }
+    section.login .form-wraper h1 {
+        font-size: 26px;
+        margin: 30px 0;
+    }
+    section.login .form-wraper {
+        padding: 70px 50px 80px;
+    }
+
+    .dropdown li {
+        padding: 12px 12px 12px 40px;
+    }
+    .referal-popup {
+        max-width: 90%;
+    }
+    .profile-popup ul {
+        padding: 12px 0 12px 30px;
+    }
+    section.providers-sec1 .box .form-wrap {
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 25px;
+    }
+    section.providers-sec1 .box .form-wrap .left-option {
+        width: 100%;
+        justify-content: space-between;
+    }
+    section.providers-sec1 .box .form-wrap .left-option input[type=search] {
+        max-width: 100%;
+        width: calc(100% - 200px);
+    }
+    section.providers-sec1 .box .form-wrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+    section.providers-sec1 .box .form-wrap .right-option {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    section.inner {
+        padding: 25px 0 20px;
+    }
+    section.inner .heading .wraper h2 {
+        font-size: 22px;
+    }
+    section.inner .heading .wraper2 a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    section.inner .heading .wraper2 a img {
+        width: 20px;
+        height: 20px;
+    }
+    section.providers-sec1 .box .pagination-wraper {
+        margin-top: 20px;
+    }
+    header .hed-wraper h4 {
+        font-size: 22px;
+    }
+    header .np-wraper {
+        gap: 22px;
+    }
+    .suspend-duration {
+        max-width: 90%;
+    }
+    .note {
+        max-width: 90%;
+    }
+    .inport {
+        max-width: 90%;
+    }
+    .candidate-onboarding .table-wrap table tbody tr td {
+        padding: 20px 16px;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
+    .blue-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .white-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .green-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .grey-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
     .container-fluid {
         padding-right: 20px;
         padding-left: 20px;
@@ -159,6 +290,7 @@
         width: 100%;
         flex-direction: column;
         gap: 20px;
+        padding: 14px;
     }
     section.home-sec1 ul.sd li h5 {
         text-align: center;
@@ -216,5 +348,237 @@
     }
     header .hed-wraper {
         justify-content: flex-end;
+    }
+    section.login .form-wraper {
+        padding: 30px 20px 40px;
+        width: 90%;
+        border-radius: 15px;
+    }
+    section.login .form-wraper h1 {
+        font-size: 20px;
+        margin: 25px 0;
+    }
+    section.login .form-wraper input:not([type=submit]) {
+        padding: 12px 12px;
+        margin-bottom: 18px;
+    }
+    section.login .form-wraper input[type=submit] {
+        font-size: 15px;
+        padding: 12px;
+    }
+    section.login .form-wraper .flex-wrap .checkWrap label {
+        padding-left: 22px;
+        font-size: 14px;
+    }
+    section.login .form-wraper .flex-wrap a {
+        font-size: 14px;
+    }
+    section.login .form-wraper .flex-wrap {
+        margin-bottom: 20px;
+    }
+    .referal-popup .heading {
+        padding: 24px 25px 14px 25px;
+    }
+    .referal-popup .form-wrap {
+        padding: 15px 25px 24px 25px;
+    }
+    .referal-popup .form-wrap input:not([type=submit]) {
+        padding: 14px 12px;
+        margin-bottom: 20px;
+    }
+    .referal-popup .form-wrap .btn-wraper {
+        justify-content: center;
+    }
+    .referal-popup .heading h2 {
+        font-size: 22px;
+    }
+    .dropdown {
+        width: 220px;
+    }
+    .profile-popup ul.lout {
+        padding: 20px 0 20px 25px;
+    }
+    section.providers-sec1 .box {
+        border-radius: 8px;
+        padding: 20px 10px;
+    }
+    section.inner .heading {
+        flex-direction: column;
+    }
+    section.inner .heading .wraper2 {
+        margin-top: 20px;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.inner .heading .wraper2 a {
+        width: 40%;
+        justify-content: center;
+    }
+    section.inner {
+        padding: 18px 0 20px;
+    }
+    section.providers-sec1 .box .form-wrap .left-option {
+        flex-direction: column;
+    }
+    section.providers-sec1 .box .form-wrap .left-option input[type=search] {
+        width: 100%;
+        border: 1px solid #023b88;
+        border-radius: 6px;
+        padding: 10px 16px 10px 38px;
+    }
+    section.providers-sec1 .box .form-wrap .right-option {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    section.providers-sec1 .box .form-wrap .right-option a.green-btn {
+        font-size: 14px;
+    }
+    section.providers-sec1 .box .pagination-wraper {
+        flex-direction: column;
+        gap: 12px;
+    }
+    section.providers-sec1 .box .pagination-wraper ul.pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.providers-sec1 .box .pagination-wraper ul.pagination li a {
+        padding: 6px 10px;
+    }
+    section.providers-sec1 .box .table-wrap table tbody tr td {
+        padding: 16px 12px;
+    }
+    section.providers-sec1 .box .table-wrap table thead tr th {
+        padding: 16px 12px;
+    }
+    .candidate-onboarding .table-wrap table tbody tr td {
+        padding: 20px 16px;
+    }
+    .suspend-duration .form-wrap {
+        padding: 25px 25px 25px;
+    }
+    .suspend-duration .form-wrap .date-box {
+        gap: 14px;
+        flex-direction: column;
+    }
+    .suspend-duration .heading {
+        padding: 25px 25px 20px;
+    }
+    .suspend-duration .form-wrap select {
+        height: 44px;
+        margin-bottom: 18px;
+    }
+    .suspend-duration .form-wrap input[type=submit] {
+        margin: 0 auto;
+    }
+    .candidate-onboarding .heading h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .candidate-onboarding .heading {
+        align-items: flex-end;
+        margin-bottom: 25px;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .candidate-onboarding {
+        padding: 20px 25px 20px;
+    }
+    .candidate-onboarding .search-box {
+        margin-bottom: 25px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .candidate-onboarding .search-box input {
+        width: 100%;
+        padding: 12px 20px;
+    }
+    .candidate-onboarding .search-box form{
+        width: 100%;
+    }
+    .candidate-onboarding .table-wrap table {
+        width: 450px;
+    }
+    .candidate-onboarding .table-wrap {
+        overflow: auto;
+    }
+    .candidate-onboarding .table-wrap table tbody tr td {
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+    .candidate-onboarding .table-wrap table thead tr th {
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+    .candidate-onboarding .table-wrap table tbody tr td:last-child {
+        width: auto;
+    }
+    .note .heading {
+        padding: 25px 25px 20px;
+    }
+    .note .form-wrap {
+        padding: 20px 25px 25px;
+    }
+    .note .form-wrap textarea {
+        height: 150px;
+    }
+    .note .form-wrap .btn-wrap {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .delete-provider-profile {
+        max-width: 90%;
+        padding: 25px;
+    }
+    .delete-provider-profile p {
+        margin: 0 auto 25px;
+    }
+    .inport .heading {
+        margin-bottom: 15px;
+        padding: 25px 25px 20px;
+    }
+    .inport .form-wrap {
+        padding: 20px 25px 25px;
+    }
+    .inport .btn-wrap {
+        justify-content: center;
+        margin-top: 22px;
+    }
+    section.provider-update-user-sec1 .form-wrap {
+        padding: 12px;
+    }
+    section.provider-update-user-sec1 .form-wrap textarea {
+        height: 140px;
+    }
+    section.provider-update-user-sec1 .form-wrap span.blue-line {
+        margin-bottom: 16px;
+    }
+    section.inner .heading .wraper2 {
+        width: 100%;
+    }
+    section.inner .heading .wraper2 a.blue-btn {
+        border: 0;
+    }
+    section.provider-update-user-sec1 .form-wrap a.blue-btn {
+        margin: 0 auto 25px;
+    }
+    section.provider-update-user-sec1 .form-wrap h4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    section.inner .heading .wraper {
+        width: 100%;
+        text-align: center;
+    }
+    section.inner .heading .wraper h2 {
+        font-size: 18px;
+    }
+    section.provider-update-user-sec1 .form-wrap ul.multiselect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
     }
 }
